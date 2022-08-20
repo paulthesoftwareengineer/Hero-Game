@@ -14,20 +14,35 @@ public class LearningCurve : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+   /* void Start()
     {
         ComputeAge();
         int characterHealth = 100;
         Debug.Log(characterClass + " - HP:" + characterHealth);
         Debug.Log($"The health of {clanName} is {characterHealth}!");
 
+
+    } */
+
+    void start ()
+    {
+        GenerateCharacter()
     }
 
-    void CreateCharacter()
+    public void GenerateCharacter ()
+    {
+        Debug.Log(Character: Marine)
+    }
+
+    
+
+
+   /* void CreateCharacter()
     {
         int characterName = "Warrior";
         Debug.Log(characterName + "-" + characterClass);
-    }
+    } */
+
 
     // Update is called once per frame
     void ComputeAge()
