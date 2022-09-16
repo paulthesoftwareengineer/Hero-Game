@@ -1,4 +1,4 @@
-sing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,8 @@ public class LearningCurve : MonoBehaviour
     //Start method
     void start ()
     {
-       ComputeAge();
+       int characterLevel = 22;
+       GenerateCharacter("Warrior", characterLevel)
     }
 
     //Compute Age method
