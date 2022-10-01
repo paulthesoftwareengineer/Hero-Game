@@ -10,17 +10,19 @@ public class LearningCurve : MonoBehaviour
     public string firstName ="Holy";
     public string lastName ="Warrior";
     public bool isCharacter = true;
+    int characterHealth = 22;
 
     //Start method
     void start ()
     {
-       int characterLevel = 22;
-       GenerateCharacter("Warrior", characterLevel)
+       //int characterHealth = 22;
+        ComputeAge();
+        Debug.Log($"Warrior's first name is {firstName}!");
     }
 
     //Compute Age method
     void ComputeAge()
     {
-        Debug.Log(currentAge + addedAge);
+        Debug.Log(currentAge + addedAge + characterHealth);
     }
 }
